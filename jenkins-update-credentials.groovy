@@ -38,7 +38,7 @@ def updateCredentials = { old_access_key, new_aws_access_key, new_aws_secret_key
             println "Failed to change Access Keys for ${c.id}"
         }
     } else {
-      println "Could not find credential for ${c.id}"
+      println "Could not find credential for ${old_access_key}"
     }
 }
 
